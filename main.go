@@ -20,4 +20,5 @@ func main() {
 		panic(err)
 	}
 	fmt.Println(say)
+	fmt.Println("Hello")
 }

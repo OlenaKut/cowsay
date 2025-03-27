@@ -5,5 +5,5 @@ phases:
     commands:
       - ls -la
       - docker build -t git.systementor.se/olena/cowsay111 .
-      - docker login -u olena -p olena1 https://git.systementor.se
+      - docker login -u olena -p 18011984Aa. https://git.systementor.se
       - docker push git.systementor.se/olena/cowsay111

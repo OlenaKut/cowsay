@@ -3,6 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
+      - ls -la
       - docker build -t git.systementor.se/olena/cowsay111 .
       - docker login -u olena -p olena https://git.systementor.se
-      - docker push git.systementor.se/olena/cowsay111 
+      - docker push git.systementor.se/olena/cowsay111

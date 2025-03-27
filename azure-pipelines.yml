@@ -21,9 +21,9 @@ stages:
       - task: CmdLine@2
         inputs:
           script: |
-            docker build -t git.systementor.se/yacloud/stefan1120 .
+            docker build -t git.systementor.se/olena/cowsay .
             docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD https://git.systementor.se
-            docker push git.systementor.se/yacloud/stefan1120
+            docker push git.systementor.se/olena/cowsay
         env:
           DOCKER_USERNAME: $(DOCKER_USERNAME)
           DOCKER_PASSWORD: $(DOCKER_PASSWORD)

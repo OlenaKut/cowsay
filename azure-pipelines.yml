@@ -21,9 +21,9 @@ stages:
       - task: CmdLine@2
         inputs:
           script: |
-            docker build -t git.systementor.se/olena/cowsay .
+            docker build -t git.systementor.se/olena/cowsay111 .
             docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD https://git.systementor.se
-            docker push git.systementor.se/olena/cowsay
+            docker push git.systementor.se/olena/cowsay111
         env:
           DOCKER_USERNAME: $(DOCKER_USERNAME)
           DOCKER_PASSWORD: $(DOCKER_PASSWORD)

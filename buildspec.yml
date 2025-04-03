@@ -1,9 +1,15 @@
 version: 0.2
 
+
+env:
+  parameter-store:
+    DOCKER_USERNAME: "DOCKER_USERNAME"
+    DOCKER_PASSWORD: "DOCKER_PASSWORD"
+
 phases:
   build:
     commands:
       - ls -la
       - docker build -t git.systementor.se/olena/cowsay111 .
-      - docker login -u olena -p 18011984Aa. https://git.systementor.se
+      - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD https://git.systementor.se
       - docker push git.systementor.se/olena/cowsay111
